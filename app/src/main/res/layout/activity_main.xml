@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobuk"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montsemi"
+        android:paddingTop="30dp"
+        android:text="Welcome!"
+        android:textColor="#22272B"
+        android:textSize="30dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_info_mobil"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showFN"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#22272B"
+        android:fontFamily="@font/popmedium"
+        android:text="LIST CAR"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="#22272B"
+        app:cornerRadius="50dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sewa"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_info_mobil"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#22272B"
+        android:fontFamily="@font/popmedium"
+        android:text="SEWA MOBIL"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="#22272B"
+        app:cornerRadius="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#22272B"
+        android:fontFamily="@font/popmedium"
+        android:layout_marginLeft="300dp"
+        android:text="LOG OUT"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="#22272B"
+        app:cornerRadius="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+    <TextView
+        android:id="@+id/showFN"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/sapa"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/popreg"
+        android:hint="Firstname"
+        android:textAlignment="center"
+        android:textColor="#22272B"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

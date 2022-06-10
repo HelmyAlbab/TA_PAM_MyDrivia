@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bbgbg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/judulsewa"
+        android:text="Penyewa"
+        android:fontFamily="@font/montsemi"
+        android:textSize="40dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:textColor="#22272B"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ListGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judulsewa"
+        android:layout_above="@+id/tambahPenyewa"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tambahPenyewa"
+        android:layout_width="200dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Tambah Penyewa"
+
+        android:fontFamily="@font/popmedium"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:backgroundTint="#22272B"
+        app:cornerRadius="50dp"/>
+
+</RelativeLayout>
